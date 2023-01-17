@@ -31,4 +31,6 @@ public class Curso extends Conteudo{
                 '}';
     }
 
+    public void setDescricao(String descriçaoCursoJava) {
+    }
 }

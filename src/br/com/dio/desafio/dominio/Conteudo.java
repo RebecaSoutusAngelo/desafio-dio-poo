@@ -16,11 +16,11 @@ public abstract class Conteudo {
         this.titulo = titulo;
     }
 
-    public privte getString() {
+    private getString() {
         return String;
     }
 
-    public void setString(privte string) {
+    public void setString(private string) {
         String = string;
     }
 }

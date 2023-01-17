@@ -26,11 +26,15 @@ public class Mentoria extends Conteudo {
                 '}';
     }
 
-    public void setData(LocalDate now) {
+    private String getDescricao() {
+        return this.
     }
 
     @Override
     public double calcularXp() {
         return XP_PADRAO + 20d;
+    }
+
+    public void setDescricao(String descricaoMentoriaJava) {
     }
 }

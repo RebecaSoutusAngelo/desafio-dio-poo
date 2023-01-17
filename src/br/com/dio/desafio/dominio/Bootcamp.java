@@ -6,7 +6,7 @@ import java.util.Objects;
 public class Bootcamp {
     private String nome;
     private String descricao;
-    private final LocalDate dataInicila = LocalData.new();
+    private final LocalDate dataInicial = LocalDate.new();
     private final LocalDate dataFinal = dataInicial.plusDays(45);
     private Set<Dev> devsInscritos = new HashSet<>();
     private Set<Conteudo> conteudos = new LinkedSet<>();
@@ -28,7 +28,7 @@ public class Bootcamp {
     }
 
     public LocalDate getDataInicila() {
-        return dataInicila;
+        return dataInicial;
     }
 
     public LocalDate getDataFinal() {
@@ -61,6 +61,6 @@ public class Bootcamp {
 
     @Override
     public int hashCode() {
-        return Objects.hash(nome, descricao, dataInicila, dataFinal, devsInscritos, conteudos);
+        return Objects.hash((Object) nome, descricao, dataInicial, dataFinal, devsInscritos, conteudos);
     }
 }
