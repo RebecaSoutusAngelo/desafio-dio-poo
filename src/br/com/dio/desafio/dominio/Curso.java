@@ -16,8 +16,6 @@ public class Curso extends Conteudo{
         return cargaHoraria;
     }
 
-
-
     public void setCargaHoraria(int cargaHoraria) {
         this.cargaHoraria = cargaHoraria;
     }
@@ -29,6 +27,10 @@ public class Curso extends Conteudo{
                 ", descricao='" + getDescricao() + '\'' +
                 ", cargaHoraria=" + cargaHoraria +
                 '}';
+    }
+
+    private String getDescricao() {
+        return null;
     }
 
     public void setDescricao(String descriçaoCursoJava) {
